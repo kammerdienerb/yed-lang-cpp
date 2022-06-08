@@ -144,7 +144,8 @@ void maybe_change_ft(yed_buffer *buff) {
     } else if (strcmp(ext, "cpp") == 0 ||
                strcmp(ext, "cxx") == 0 ||
                strcmp(ext, "hpp") == 0 ||
-               strcmp(ext, "hxx") == 0) {
+               strcmp(ext, "hxx") == 0 ||
+               strcmp(ext, "cc")  == 0) {
 
         yed_buffer_set_ft(buff, yed_get_ft("C++"));
     }
